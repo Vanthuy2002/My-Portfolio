@@ -3,7 +3,8 @@ let Btns = document.querySelectorAll(".template__btn-item");
 for(let key in Btns){
     let btn = Btns[key];
 
-    btn.addEventListener("click", () =>{
+    btn.onclick = (e)=>{
         btn.classList.toggle("active");
-    });
+        e.stopPropagation();
+    }
 };
