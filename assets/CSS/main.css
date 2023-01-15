@@ -10,10 +10,16 @@
 }
 
 .header{
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 24px 0;
+    padding: 20px;
     align-items: center;
+    border-bottom: 1px solid #ccc;
+    background-color: #f1f1f1;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 
 
@@ -55,6 +61,7 @@
 .information{
     width: 100%;
     margin: 48px 0;
+    padding-top: 70px;
 }
 
 
@@ -225,6 +232,10 @@
     background-color: transparent;
 }
 
+.template__btn-item + .template__btn-item{
+    margin-right: 10px;
+}
+
 .template__btn-item:hover{
     background-color: #4a6cf7;
     color: var(--bs-white);
@@ -234,6 +245,7 @@
     background-color: #4a6cf7;
     color: var(--bs-black);
     opacity: 1;
+    margin-right: 10px;
 }
 
 .template__flex{
@@ -252,4 +264,228 @@
     opacity: 0.6;
     font-size: 18px;
     margin: 24px 0;
+}
+
+.template__contact{
+    text-align: center;
+    margin: 48px 0;
+    padding: 48px 0;
+    background-color: #4a6cf7;
+    border-radius: 5px;
+}
+.template__cnt-heading{
+    margin: 32px 0;
+    color: var(--bs-white);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+
+.template__form{
+    width: 35%;
+    border: unset;
+    padding: 18px ;
+    opacity: 0.8;
+    outline: none;
+    border-radius: 999px;
+    background-color: rgba(240, 239, 239, 0.4);
+}
+
+.template__form::placeholder{
+    color: white;
+}
+
+.template__form:focus{
+    border: 1px solid var(--bs-white);
+}
+
+
+.template__form-btn{
+    background-color: var(--bs-white);
+    color: #4a6cf7;
+    margin-left: 10px;
+    border: unset;
+    padding: 12px 16px;
+    border-radius: 999px;
+}
+
+.template__form-btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.template__form-btn:active{
+    transform: scale(0.9);
+}
+
+/* pricing */
+
+.pricing{
+    background-color: #f5f5f5;
+    padding: 32px 0;
+}
+            
+.pricing__text{
+    text-align: center;
+}
+
+.pricing__list{
+    margin: 80px 0;
+}
+
+.pricing__text-heading,
+.pricing__text-desc,
+.pricing__text-subhead{
+    margin: 16px 0;
+}
+
+.pricing__text-subhead{
+    color: #4a6cf7;
+    font-weight: 700;
+    font-size: 18px;
+}
+               
+.pricing__text-heading{
+    font-weight: 600;
+
+}
+.pricing__text-desc{
+    opacity: 0.6;
+}
+.pricing__list-item{
+    background-color: #fcfeff;
+    padding: 32px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.pricing__item-title{
+    color: #4a6cf7;
+    font-weight: 600;
+}
+
+.pricing__item-desc,
+.pricing__item-title,
+.pricing__item-price{
+    margin: 20px 0;
+}
+.pricing__item-price{
+    font-weight: 700;
+}
+
+.pricing__item-time{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.pricing__item-time,
+.pricing__item-desc{
+    opacity: 0.5;
+}
+
+.pricing__item-desc{
+    padding-bottom: 32px;
+    border-bottom: 1px solid #ccc ;
+}
+
+.pricing__item-inf{
+    list-style: none;
+    padding-left: 0;
+}
+
+.pricing__item-inf li + li{
+    margin: 14px 0;
+    opacity: 0.7;
+}
+
+.pricing__item-btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 16px 12px;
+    width: 100%;
+    color: #4a6cf7;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.pricing__item-btn.default{
+    background-color: #4a6cf7;
+    color: var(--bs-white);
+}
+
+.pricing__item-btn.default:hover{
+    opacity: 0.8;
+}
+
+
+.pricing__item-btn:hover{
+    background-color: #4a6cf7;
+    color: var(--bs-white);
+}
+
+/* contact */
+
+.contact{
+    padding: 48px 0;
+}
+
+.contact__text{
+    text-align: center;
+}
+.contact__subheading{
+    color: #4a6cf7;
+    font-weight: 600;
+}
+.contact__title{
+    font-weight: 800;
+}
+
+.contact__text-desc,
+.contact__subheading,
+.contact__title{
+    margin: 16px 0;
+}
+
+.contact__text-desc{
+    opacity: 0.5;
+}
+
+.contact__form{
+    width: 75%;
+    margin: 0 auto; 
+    text-align: center;
+}
+.cnt__form-name{
+    width: 100%;
+    margin: 10px;
+    outline: none;
+    padding: 16px 12px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(240, 239, 239, 0.4);
+}
+
+.cnt__form-name:focus{
+    border-bottom: 2px solid #4a6cf7;
+}
+
+.cnt__form-btn{
+    border: unset;
+    margin: 16px 0;
+    padding: 12px 20px;
+    color: var(--bs-white);
+    background-color: #4a6cf7;
+    border-radius: 999px;
+    min-width: 200px;
+    text-align: center;
+}
+
+.cnt__form-btn:active{
+    transform: scale(0.8);
+}
+
+.form__checkbox{
+    margin: 16px 0;
 }
