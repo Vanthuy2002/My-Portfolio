@@ -8,3 +8,20 @@ for(let key in Btns){
         e.stopPropagation();
     }
 };
+
+// bắt sự kiện onscroll
+//scrollTop mặc định = 0
+
+let toTopBtn = document.querySelector(".to__top");
+
+window.onscroll = () =>{
+    
+    if(document.documentElement.scrollTop > 0){
+        toTopBtn.style.display = "block";
+    }
+    else{
+        toTopBtn.style.display = "none";
+    }
+}
+
+//reponsive menu

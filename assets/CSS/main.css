@@ -488,4 +488,165 @@
 
 .form__checkbox{
     margin: 16px 0;
+    user-select: none;
+}
+/* footer */
+.footer{
+    background-color: #090e34;
+}
+
+.footer__boder{
+    padding: 64px 0;
+    border-bottom: 1px solid #b5b6c2 ;
+}
+.footer__addr{
+    padding: 10px 0;
+}
+.footer__addr-head{
+    color: var(--bs-white);
+}
+
+.footer__desc-mail,
+.footer__addr p,
+.footer__addr-subhead{
+    color: #b5b6c2;
+    margin: 14px 0;
+}
+
+.footer__desc-mail{
+    text-decoration: none;
+}
+
+.footer__addr-title{
+    color: var(--bs-white);
+    font-weight: 600;
+    margin: 16px 0;
+}
+.footer__list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer__list-item {
+    display: inline-block;
+    margin: 8px 0;
+    text-decoration: none;
+    color: #b5b6c2;
+}
+
+.footer__list-item:hover{
+    color: #4a6cf7;
+}
+
+
+.footer__social{
+    text-align: center;
+    padding: 48px 0;
+}
+.footer__social-icon__cricke{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(241, 241, 241 , 0.6);
+    border-radius: 50%;
+    margin: 0 6px;
+}
+
+.footer__social-icon a{
+    display: inline-block;
+    font-size: 25px;
+    color: var(--bs-black);
+}
+
+.footer__social-icon__cricke:hover{
+    background-color: #4a6cf7;
+}
+
+.footer__social-copyright{
+    margin: 16px 0;
+    color: #b5b6c2;
+}
+
+/* to the top */
+
+.to__top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    background-color: #4a6cf7;
+    border-radius: 3px;
+    display: none;
+}
+.to__top a{
+    text-decoration: none;
+}
+
+.to__top .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: var(--bs-black);
+}
+
+/* reponsive */
+
+.reponsive__icon{
+    display: none;
+}
+
+/* tablet */
+@media (max-width : 767px){
+    .header{
+        display: block;
+        position: relative;
+        overflow: hidden;
+        height: 70px;
+    }
+    .header__btn{
+        display: block;
+    }
+    .header__list-item{
+        display: block;
+        padding: 12px 0;
+        font-size: 18px;
+    }
+    .reponsive__icon{
+        position: absolute;
+        cursor: pointer;
+        display: block;
+        font-size: 40px;
+        right: 10px;
+        top: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .header{
+        display: block;
+        position: relative;
+        overflow: hidden;
+        height: 70px;
+    }
+    .header__btn
+    {
+        display: block;
+    }
+
+    .header__list-item{
+        display: block;
+        padding: 12px 0;
+        font-size: 18px;
+    }
+    .reponsive__icon{
+        position: absolute;
+        cursor: pointer;
+        display: block;
+        font-size: 40px;
+        right: 20px;
+        top: 10px;
+    }
 }
