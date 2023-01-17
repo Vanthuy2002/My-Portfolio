@@ -22,7 +22,7 @@ window.onscroll = () =>{
     else{
         toTopBtn.style.display = "none";
     }
-};
+}
 
 //thông báo khi click vào button
 
@@ -35,7 +35,7 @@ btnSubmit.addEventListener("click", ()=>{
     setTimeout(()=>{
         toast.style.display = "none";
     },3000);
-});
+})
 
 closeToast.addEventListener("click", ()=>{
     toast.style.display = "none";

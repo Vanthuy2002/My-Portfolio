@@ -22,7 +22,7 @@ window.onscroll = () =>{
     else{
         toTopBtn.style.display = "none";
     }
-};
+}
 
 //thông báo khi click vào button
 
