@@ -52,3 +52,7 @@ BtnReset.addEventListener("click", ()=>{
         toastErr.style.display = "none";
     }, 3000);
 });
+
+closeToast.addEventListener("click", ()=>{
+    toastErr.style.display = "none";
+});

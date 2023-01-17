@@ -484,8 +484,7 @@
 
 .cnt__form-btn:last-child{
     background-color: #e05f5f;
-    min-width: 150px;
-    margin: 0 8px;
+    min-width: 15;
 }
 
 .cnt__form-btn:active{
@@ -720,10 +719,6 @@
     display: none;
 }
 
-#toastReset{
-    display: none;
-}
-
 .window__toast{
     display: flex;
     align-items: center;
@@ -751,7 +746,6 @@
     margin: 0;
     font-size: 20px;
 }
-
 .window__toast-close{
     color: yellowgreen;
     font-size: 24px;

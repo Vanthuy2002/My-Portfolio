@@ -24,11 +24,11 @@ window.onscroll = () =>{
     }
 };
 
-//thông báo khi click vào button Send
+//thông báo khi click vào button 
 
 let btnSubmit = document.querySelector("#check__btn");
 let toast = document.querySelector("#toastAll");
-var closeToast = document.querySelector(".window__toast-close");
+let closeToast = document.querySelector(".window__toast-close");
 
 btnSubmit.addEventListener("click", ()=>{
     toast.style.display = "block";
@@ -39,16 +39,4 @@ btnSubmit.addEventListener("click", ()=>{
 
 closeToast.addEventListener("click", ()=>{
     toast.style.display = "none";
-});
-
-//Thông báo khi click vào button Reset
-
-let BtnReset = btnSubmit.nextElementSibling;
-let toastErr = document.querySelector("#toastReset");
-
-BtnReset.addEventListener("click", ()=>{
-    toastErr.style.display = "block";
-    setTimeout(()=>{
-        toastErr.style.display = "none";
-    }, 3000);
 });

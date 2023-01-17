@@ -28,7 +28,7 @@ window.onscroll = () =>{
 
 let btnSubmit = document.querySelector("#check__btn");
 let toast = document.querySelector("#toastAll");
-var closeToast = document.querySelector(".window__toast-close");
+let closeToast = document.querySelector(".window__toast-close");
 
 btnSubmit.addEventListener("click", ()=>{
     toast.style.display = "block";
@@ -50,5 +50,5 @@ BtnReset.addEventListener("click", ()=>{
     toastErr.style.display = "block";
     setTimeout(()=>{
         toastErr.style.display = "none";
-    }, 3000);
-});
+    })
+})

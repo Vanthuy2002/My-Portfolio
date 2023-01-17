@@ -482,12 +482,6 @@
     text-align: center;
 }
 
-.cnt__form-btn:last-child{
-    background-color: #e05f5f;
-    min-width: 150px;
-    margin: 0 8px;
-}
-
 .cnt__form-btn:active{
     transform: scale(0.8);
 }
@@ -663,8 +657,7 @@
 
     .infor__text-btn{
         display: flex;
-        justify-content: space-between;
-        text-align: center;
+        /* justify-content: space-between; */
     }
 }
 
@@ -720,10 +713,6 @@
     display: none;
 }
 
-#toastReset{
-    display: none;
-}
-
 .window__toast{
     display: flex;
     align-items: center;
@@ -751,7 +740,6 @@
     margin: 0;
     font-size: 20px;
 }
-
 .window__toast-close{
     color: yellowgreen;
     font-size: 24px;
