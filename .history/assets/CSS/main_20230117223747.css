@@ -15,10 +15,10 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 16px 20px;
+    padding: 20px;
     align-items: center;
     border-bottom: 1px solid #ccc;
-    background-color: #ffffff;
+    background-color: #eff79c;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 
@@ -709,7 +709,7 @@
     display: flex;
     align-items: center;
     height: 50px;
-    border-left: 4px solid #4d2475;
+    border-left: 3px solid rebeccapurple;
     border-radius: 5px;
     position: fixed;
     z-index: 2;
@@ -724,6 +724,15 @@
     }
     to{
         transform: translate(0);
+    }
+}
+
+@keyframes fadeout{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(calc(100% + 30px));
     }
 }
 
